@@ -64,10 +64,10 @@
       updateDisplay(verse);
     });
     function updateDisplay(verse) {
-
+      verse = verse.replace(" ", "").toLowerCase();
+      const url = `${verse}.txt`;
     }
-    verse = verse.replace(" ", "").toLowerCase();
-    const url = `${verse}.txt`;
+
     // Call `fetch()`, passing in the URL.
     fetch(url)
       // fetch() returns a promise. When we have received a response from the server,
