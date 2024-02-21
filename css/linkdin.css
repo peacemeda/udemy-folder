@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  grid-column: auto;
+  grid-row: inherit;
+}
+img {
+  width: 100vw;
+  height: 70vh;
+  background-repeat: no-repeat;
+}
+li {
+  list-style-type: none;
+  align-items: center;
+}
+div {
+  display: inline-block;
+  max-width: 360px;
+  box-sizing: border-box;
+  outline: cover;
+  /* background: lightblue; */
+}
+h6 {
+  font-size: large;
+}

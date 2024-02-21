@@ -1,0 +1,88 @@
+/* absolute , relative */
+/* pixels are absolute units*/
+/* percent units are relative unit */
+/* 
+em, rem   are relative 
+1em = base value (16px) * number (1) = 16px
+2em = base value (16px) * number (2) = 32px
+rem depends on root element
+1rem = base value (16px) * number(1) = 16px
+*/
+/* 
+vw, percent of the screen
+vh percent of the screen 
+*/
+/* font-size, height, width */
+
+/* Default browser styles */
+
+/* h1 {
+  font-size: 60px;
+  background: blue;
+  color: white;
+  width: 200px;
+  height: 400px;
+}
+div {
+  font-size: 16px;
+}
+
+.absolute {
+  font-size: 32px;
+}
+.relative {
+  font-size: 2em;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.hero {
+  background: green;
+  height: 100vh;
+  width: 100vw;
+}
+.about {
+  background: red;
+  height: 43vh;
+  width: 54vw;
+} */
+/* 
+calc()
+Mix and match values
+always need space in b/n
+ */
+
+/* h1 {
+  color: red;
+  font-size: 60px;
+} */
+/* 
+min-height: auto adjust according to the content
+overflow, hidden
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.navbar {
+  background: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.banner {
+  background: red;
+  height: calc(100vh - 100px);
+}
+.example {
+  background: green;
+  width: 10rem;
+  height: 25rem;
+  overflow: hidden;
+  overflow: scroll;
+}

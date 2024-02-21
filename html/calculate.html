@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate</title>
+</head>
+
+<body>
+  <button id="calculate">Calculate</button>
+  <button id="clear">Clear</button>
+  <pre id="results" style="display: newline;"></pre>
+  <script>
+
+    const results = document.querySelector('#results')
+    const calculatebtn = document.querySelector('#calculate');
+    const clearbtn = document.querySelector('#clear');
+
+    function calculate() {
+      console.log('\n');
+      for (let i = 1; i < 10; i++) {
+        const newResualt = `${i} x ${i} = ${i * i}`;
+        results.textContent += `${newResualt}\n`;
+      }
+      results.textContent += '\nFinished!\n'
+    };
+
+
+    calculatebtn.addEventListener('click', calculate);
+    clearbtn.addEventListener('click', () => {
+      results.textContent = "";
+    })
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    div {
+      min-height: 100vh;
+      color: white;
+      border: 1px solid red;
+      justify-content: center;
+      text-transform: uppercase;
+      align-items: center;
+      font-size: 2rem;
+      display: flex;
+
+    }
+
+    .big-img {
+      background: linear-gradient(to top, rgb(0, 0, 0, 0.3));
+      background: linear-gradient(to top, rgb(255, 100, 239, 0.5));
+      background: url(/others/pexels-photo-1037995.webp);
+      background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      background-size: cover;
+
+    }
+
+    .small-img {
+
+      background: url(/images/small-image.jpeg) center/cover no-repeat fixed;
+      linear-gradient(to top, rgb(0, 0, 0, 3));
+      background: linear-gradient(to top, rgb(255, 100, 239, 0.5));
+
+    }
+
+    .normal-img {
+      background: url(/images/pexels-photo-1762578.webp);
+      background-repeat: no-repeat;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="big-img">
+    <h1>i'm big image</h1>
+  </div>
+  <div class="small-img">
+    <h1>i'm small image</h1>
+  </div>
+  <div class="normal-img">
+    <h1>i'm folder image</h1>
+  </div>
+</body>
+
+</html>

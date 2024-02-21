@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/alarm.css">
+  <script src="/others/worke.js" async></script>
+
+  <title>Promise based Api</title>
+</head>
+
+<body>
+  <!-- <label for="name">Name: </label><input type="text" name="" id="name"> <br>
+  <label for="delay">Delay: </label><input type="text" name="" id="delay"> <br>
+  <button id="set-alarm">Set Alarm</button>
+  <div id="output"></div> -->
+  <label for="quota">Number of primes:</label>
+  <input type="text" id="quota" name="quota" value="1000000" />
+
+  <button id="generate">Generate primes</button>
+  <button id="reload">Reload</button>
+
+  <textarea id="user-input" rows="5" cols="62">
+  Try typing in here immediately after pressing "Generate primes"
+      </textarea>
+
+  <div id="output"></div>
+
+  <!-- <script> -->
+  <!-- // const name = document.querySelector("#name");
+    // const delay = document.querySelector("#delay");
+    // const button = document.querySelector("#set-alarm");
+    // const output = document.querySelector("#output");
+
+    // function alarm(person, delay) {
+    //   return new Promise((resolve, reject) => {
+    //     if (delay < 0) {
+    //       throw new Error("Alarm delay must not be negative");
+    //     }
+    //     setTimeout(() => {
+    //       resolve(`Wake up, ${person}!`);
+    //     }, delay);
+    //   });
+    // }
+
+    // button.addEventListener("click", () => {
+    //   alarm(name.value, delay.value)
+    //     .then((message) => (output.textContent = message))
+    //     .catch((error) => (output.textContent = `Couldn't set alarm: ${error}`));
+    // });
+    // Create a new worker, giving it the code in "generate.js"
+   // const worker = new Worker("./generate.js");
+
+    // When the user clicks "Generate primes", send a message to the worker.
+    // The message command is "generate", and the message also contains "quota",
+    // which is the number of primes to generate.
+    // document.querySelector("#generate").addEventListener("click", () => {
+    //   const quota = document.querySelector("#quota").value;
+    //   worker.postMessage({
+    //     command: "generate",
+    //     quota,
+    //   });
+    // });
+
+    // When the worker sends a message back to the main thread,
+    // update the output box with a message for the user, including the number of
+    // primes that were generated, taken from the message data.
+  //   worker.addEventListener("message", (message) => {
+  //     document.querySelector("#output").textContent =
+  //       `Finished generating ${message.data} primes!`;
+  //   });
+
+  //   document.querySelector("#reload").addEventListener("click", () => {
+  //     document.querySelector("#user-input").value =
+  //       'Try typing in here immediately after pressing "Generate primes"';
+  //     document.location.reload();
+  //   }); -->
+
+  <!-- </script> -->
+</body>
+
+</html>

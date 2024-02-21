@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      font-size: 24px;
+      margin: 5px;
+      transition: all 2s linear;
+    }
+
+    div:hover {
+      transform: translateX(100px);
+    }
+
+    .one {
+      /* background: red; */
+      transition-timing-function: ease;
+    }
+
+    .two {
+      transition-timing-function: linear;
+    }
+
+    .three {
+      transition-timing-function: ease-in;
+
+    }
+
+    .one1 {
+      /* background: red; */
+      transition-timing-function: default;
+    }
+
+    .two1 {
+      transition-timing-function: ease-out;
+    }
+
+    .three1 {
+      transition-timing-function: ease-in-out;
+
+    }
+
+    /* .three:hover {
+      background: coral;
+      border-radius: 50%;
+      transform: scale(1.2);
+    } */
+
+
+    /* * {
+      margin: 0;
+    }
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .hero-center {
+      border: 2px solid red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 300px;
+    } */
+  </style>
+  <title>transform</title>
+</head>
+
+<body>
+  <!-- <div class="hero">
+    <div class="hero-center">
+      <h1>web dev</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius nulla obcaecati, corrupti autem non
+        optio sapiente veritatis sint blanditiis.</p>
+    </div>
+  </div> -->
+  <div class="one">default</div>
+  <div class="two">ease</div>
+  <div class="three">linear</div>
+  <div class="one1">ease-in</div>
+  <div class="two1">ease-out</div>
+  <div class="three1">ease-in-out</div>
+</body>
+
+</html>

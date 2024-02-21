@@ -1,0 +1,55 @@
+/* || general styles */
+
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+body {
+  width: 1500px;
+  margin: 0 50px 0 50px;
+  background-image: url(/smoothie\ copy.png);
+  background-size: cover;
+  color: blue;
+}
+
+h1,
+h2 {
+  font-family: "Faster One", cursive;
+}
+
+/* header styles */
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* section styles */
+
+section article {
+  width: 33%;
+  float: inline-start;
+  color: black;
+  font-weight: bolder;
+}
+
+section p {
+  margin: 5px 0;
+  font-size: large;
+}
+
+section ul {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+}

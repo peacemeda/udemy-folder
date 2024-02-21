@@ -1,0 +1,40 @@
+/* color properties */
+/* color and background */
+/* rgb 0-255 (red, green, blue */
+/* rgb 4th value is opicity */
+/* other HEX value #RRGGBB*/
+/* HSL */
+/* lessons*/
+/*
+#first {
+  color: white;
+  background: black;
+}
+
+#second {
+  color: rgb(255, 0, 0);
+  background: yellow;
+}
+
+#third {
+  color: rgb(0, 255, 0);
+  background: rgb(0, 0, 0);
+}
+body {
+  background: rgb(0, 0, 255, 0.75);
+}*/
+
+/* project  starts */
+body {
+  background: #f1f5f9;
+}
+.container {
+  background: #fff;
+}
+
+h3 {
+  color: #645cff;
+}
+.special-container {
+  background: rgba(0, 0, 0, 0.9);
+}

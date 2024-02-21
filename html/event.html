@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event</title>
+  <style>
+    .tile {
+      height: 60px;
+      width: 60px;
+      float: left;
+      cursor: pointer;
+      display: flexbox;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- <form>
+    <div>
+      <label for="fname">First name: </label>
+      <input id="fname" type="text" />
+    </div>
+    <div>
+      <label for="lname">Last name: </label>
+      <input id="lname" type="text" />
+    </div>
+    <div>
+      <input id="submit" type="submit" />
+    </div>
+  </form>
+  <p></p> -->
+  <!-- <button>Display video</button>
+
+  <div class="hidden">
+    <video>
+      <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" /> -->
+  <!-- <source src="/rabbit320.mp4">
+  </video>
+  </div>
+  <p>
+    Your browser doesn't support HTML video. Here is a
+    <a href="/rabbit320.mp4">link to the video</a> instead.
+  </p> -->
+  <div id="container">
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+  </div>
+
+
+  <script>
+    // const form = document.querySelector("form");
+    // const fname = document.getElementById("fname");
+    // const lname = document.getElementById("lname");
+    // const para = document.querySelector("p");
+
+    // form.addEventListener("submit", (e) => {
+    //   if (fname.value === "" || lname.value === "") {
+    //     e.preventDefault();
+    //     para.textContent = "You need to fill in both names!";
+    //   }
+    // });
+
+    // const btn = document.querySelector("button");
+    // const box = document.querySelector("div");
+    // const video = document.querySelector("video");
+
+    // btn.addEventListener("click", () => box.classList.remove("hidden"));
+    // video.addEventListener("click", () => video.play());
+    // box.addEventListener("click", () => box.classList.add("hidden"));
+    function random(number) {
+      return Math.floor(Math.random() * number);
+    }
+
+    function bgChange() {
+      const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+      return rndCol;
+    }
+
+    const container = document.querySelector("#container");
+
+    container.addEventListener("click", (event) => {
+      event.target.style.backgroundColor = bgChange();
+    });
+
+  </script>
+</body>
+
+</html>
